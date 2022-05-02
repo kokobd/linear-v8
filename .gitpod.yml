@@ -5,6 +5,3 @@ vscode:
   extensions:
     - haskell.haskell
     - justusadam.language-haskell
-    - arrterian.nix-env-selector
-    - bbenoist.Nix
-    - jnoortheen.nix-ide
