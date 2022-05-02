@@ -2,3 +2,5 @@ build/
 dist-newstyle/
 .vscode/
 .idea/
+cabal.project.local
+.stack-work/

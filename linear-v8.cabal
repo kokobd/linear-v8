@@ -5,18 +5,22 @@ synopsis:           A linear type based binding to Google V8 JavaScript engine
 license:            BSD-3-Clause
 author:             kokobd
 maintainer:         contact@zelinf.net
-
--- A copyright notice.
--- copyright:
--- category:
 extra-source-files:
     CHANGELOG.md
     README.md
 
-executable linear-v8
-    main-is:          Main.hs
+library
+    hs-source-dirs: src
+    exposed-modules:
+        V8
     build-depends:
         base ^>= 4.16
       , linear-base ^>= 0.2.0
-    hs-source-dirs:   app
+      , inline-c-cpp
     default-language: Haskell2010
+    cxx-sources:
+        csrc/v8.cpp
+    extra-libraries:
+        v8
+        v8_libplatform
+        stdc++
