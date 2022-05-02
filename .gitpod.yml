@@ -1,0 +1,13 @@
+image:
+  file: .gitpod.Dockerfile
+tasks:
+  - init: >
+      mkdir -p /home/gitpod/.config/nix &&
+      echo 'sandbox = false' >> /home/gitpod/.config/nix/nix.conf
+
+vscode:
+  extensions:
+    - haskell.haskell
+    - justusadam.language-haskell
+    - arrterian.nix-env-selector
+    - bbenoist.Nix
