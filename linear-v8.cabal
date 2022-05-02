@@ -22,5 +22,5 @@ library
         csrc/v8.cpp
     extra-libraries:
         v8
-        v8_libplatform
+        -- v8_libplatform
         stdc++
